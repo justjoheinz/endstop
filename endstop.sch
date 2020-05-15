@@ -1,0 +1,303 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5EB3ADA8
+P 6850 4100
+F 0 "#PWR0101" H 6850 3850 50  0001 C CNN
+F 1 "GND" H 6855 3927 50  0000 C CNN
+F 2 "" H 6850 4100 50  0001 C CNN
+F 3 "" H 6850 4100 50  0001 C CNN
+	1    6850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5EB3AEE7
+P 7100 4100
+F 0 "#PWR0102" H 7100 3950 50  0001 C CNN
+F 1 "+5V" H 7115 4273 50  0000 C CNN
+F 2 "" H 7100 4100 50  0001 C CNN
+F 3 "" H 7100 4100 50  0001 C CNN
+	1    7100 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EB3B0BB
+P 6850 3900
+F 0 "#FLG0101" H 6850 3975 50  0001 C CNN
+F 1 "PWR_FLAG" H 6850 4073 50  0000 C CNN
+F 2 "" H 6850 3900 50  0001 C CNN
+F 3 "~" H 6850 3900 50  0001 C CNN
+	1    6850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EB3B72C
+P 7100 3900
+F 0 "#FLG0102" H 7100 3975 50  0001 C CNN
+F 1 "PWR_FLAG" H 7100 4073 50  0000 C CNN
+F 2 "" H 7100 3900 50  0001 C CNN
+F 3 "~" H 7100 3900 50  0001 C CNN
+	1    7100 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3900 6850 4100
+Wire Wire Line
+	7100 3900 7100 4100
+$Comp
+L power:GND #PWR0105
+U 1 1 5EB42F7D
+P 5400 2650
+F 0 "#PWR0105" H 5400 2400 50  0001 C CNN
+F 1 "GND" H 5405 2477 50  0000 C CNN
+F 2 "" H 5400 2650 50  0001 C CNN
+F 3 "" H 5400 2650 50  0001 C CNN
+	1    5400 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L push_button:NCNO-Pushbutton SW1
+U 1 1 5EB44A71
+P 4150 3050
+F 0 "SW1" V 4121 3038 50  0000 L CNN
+F 1 "NCNO-Pushbutton" V 4212 3038 50  0000 L CNN
+F 2 "endstop:SIP-3" H 4150 3050 50  0001 C CNN
+F 3 "" H 4150 3050 50  0001 C CNN
+	1    4150 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L push_button:NCNO-Pushbutton SW2
+U 1 1 5EB45B1B
+P 5500 3000
+F 0 "SW2" V 5471 2988 50  0000 L CNN
+F 1 "NCNO-Pushbutton" V 5562 2988 50  0000 L CNN
+F 2 "endstop:SIP-3" H 5500 3000 50  0001 C CNN
+F 3 "" H 5500 3000 50  0001 C CNN
+	1    5500 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 2650 5400 2850
+Wire Wire Line
+	4050 2850 4050 2900
+Wire Wire Line
+	3850 2700 3850 2900
+NoConn ~ 5300 2850
+NoConn ~ 3950 2900
+$Comp
+L power:+5V #PWR03
+U 1 1 5EB93B09
+P 7050 1050
+F 0 "#PWR03" H 7050 900 50  0001 C CNN
+F 1 "+5V" H 7065 1223 50  0000 C CNN
+F 2 "" H 7050 1050 50  0001 C CNN
+F 3 "" H 7050 1050 50  0001 C CNN
+	1    7050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EB94402
+P 7050 1950
+F 0 "R1" H 7120 1996 50  0000 L CNN
+F 1 "220" H 7120 1905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6980 1950 50  0001 C CNN
+F 3 "~" H 7050 1950 50  0001 C CNN
+	1    7050 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5EB94635
+P 7050 2450
+F 0 "D1" V 6997 2528 50  0000 L CNN
+F 1 "LED" V 7088 2528 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 7050 2450 50  0001 C CNN
+F 3 "~" H 7050 2450 50  0001 C CNN
+	1    7050 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5EB9538A
+P 7050 2800
+F 0 "#PWR04" H 7050 2550 50  0001 C CNN
+F 1 "GND" H 7055 2627 50  0000 C CNN
+F 2 "" H 7050 2800 50  0001 C CNN
+F 3 "" H 7050 2800 50  0001 C CNN
+	1    7050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EB95C57
+P 7700 1450
+F 0 "R2" V 7493 1450 50  0000 C CNN
+F 1 "1K" V 7584 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7630 1450 50  0001 C CNN
+F 3 "~" H 7700 1450 50  0001 C CNN
+	1    7700 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 1050 7050 1250
+Wire Wire Line
+	7050 1650 7050 1800
+Wire Wire Line
+	7050 2100 7050 2300
+Wire Wire Line
+	7050 2600 7050 2800
+Wire Wire Line
+	7350 1450 7550 1450
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5EB977E0
+P 4050 4300
+F 0 "J2" H 4130 4342 50  0000 L CNN
+F 1 "Conn_01x03" H 4130 4251 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03503HBLU_1x03_P5.00mm_Horizontal" H 4050 4300 50  0001 C CNN
+F 3 "~" H 4050 4300 50  0001 C CNN
+	1    4050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5EB9829D
+P 3700 4200
+F 0 "#PWR01" H 3700 3950 50  0001 C CNN
+F 1 "GND" V 3705 4072 50  0000 R CNN
+F 2 "" H 3700 4200 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5EB984E5
+P 3700 4300
+F 0 "#PWR02" H 3700 4150 50  0001 C CNN
+F 1 "+5V" V 3715 4428 50  0000 L CNN
+F 2 "" H 3700 4300 50  0001 C CNN
+F 3 "" H 3700 4300 50  0001 C CNN
+	1    3700 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 4400 3450 4400
+Text GLabel 3450 4400 0    50   Input ~ 0
+SIG
+Text GLabel 8250 1450 2    50   Input ~ 0
+SIG
+Wire Wire Line
+	7850 1450 8250 1450
+Text GLabel 3850 2700 1    50   Input ~ 0
+SIG
+Wire Wire Line
+	3700 4200 3850 4200
+Wire Wire Line
+	3700 4300 3850 4300
+$Comp
+L push_button:NCNO-Pushbutton SW3
+U 1 1 5EBA9CE7
+P 4150 3750
+F 0 "SW3" V 4121 3738 50  0000 L CNN
+F 1 "NCNO-Pushbutton" V 4212 3738 50  0000 L CNN
+F 2 "endstop:SIP-3" H 4150 3750 50  0001 C CNN
+F 3 "" H 4150 3750 50  0001 C CNN
+	1    4150 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L push_button:NCNO-Pushbutton SW4
+U 1 1 5EBAA4A7
+P 5500 3750
+F 0 "SW4" V 5471 3738 50  0000 L CNN
+F 1 "NCNO-Pushbutton" V 5562 3738 50  0000 L CNN
+F 2 "endstop:SIP-3" H 5500 3750 50  0001 C CNN
+F 3 "" H 5500 3750 50  0001 C CNN
+	1    5500 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 3600 3700 3600
+Wire Wire Line
+	4050 3600 4200 3600
+Wire Wire Line
+	4200 3600 4200 3300
+Wire Wire Line
+	5200 3600 5050 3600
+Wire Wire Line
+	5050 3600 5050 3300
+NoConn ~ 3950 3600
+NoConn ~ 5300 3600
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5EBB5077
+P 3950 3500
+F 0 "J1" V 3822 3680 50  0000 L CNN
+F 1 "Conn_01x03" V 3913 3680 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type101_RT01603HBWC_1x03_P5.08mm_Horizontal" H 3950 3500 50  0001 C CNN
+F 3 "~" H 3950 3500 50  0001 C CNN
+	1    3950 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5EBB5FEE
+P 5300 3500
+F 0 "J3" V 5172 3680 50  0000 L CNN
+F 1 "Conn_01x03" V 5263 3680 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type101_RT01603HBWC_1x03_P5.08mm_Horizontal" H 5300 3500 50  0001 C CNN
+F 3 "~" H 5300 3500 50  0001 C CNN
+	1    5300 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 3300 3700 3300
+Wire Wire Line
+	3700 3300 3700 3600
+Wire Wire Line
+	4050 3300 4200 3300
+Wire Wire Line
+	5200 3300 5050 3300
+Wire Wire Line
+	5400 3300 5600 3300
+Wire Wire Line
+	5600 3300 5600 3600
+Wire Wire Line
+	5600 3600 5400 3600
+NoConn ~ 5300 3300
+NoConn ~ 3950 3300
+NoConn ~ 3600 3600
+Wire Wire Line
+	4050 2850 5200 2850
+$Comp
+L Transistor_BJT:2N3906 Q1
+U 1 1 5EBD7541
+P 7150 1450
+F 0 "Q1" H 7341 1404 50  0000 L CNN
+F 1 "2N3906" H 7341 1495 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7350 1375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 7150 1450 50  0001 L CNN
+	1    7150 1450
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

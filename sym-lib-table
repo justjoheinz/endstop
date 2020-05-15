@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name lsf-kicad)(type Legacy)(uri /Users/markusklink/Projects/hardware/kicadlibs/lsf-kicad-lib/lsf-kicad.lib)(options "")(descr ""))
+  (lib (name push_button)(type Legacy)(uri ${KIPRJMOD}/push_button.lib)(options "")(descr ""))
+)
